@@ -12,5 +12,13 @@ export default {
 </script>
 <style lang="scss" scoped>
   @import '../assets/adviser.scss';
+  .adviser-img {
+    width: 100%;
+    height: 0;
+    padding-bottom: 31.1%;
+    border-radius: 1rem;
+    background: url(../assets/img/adviser.png) no-repeat;
+    background-size: 100% 100%;
+  }
 </style>
 

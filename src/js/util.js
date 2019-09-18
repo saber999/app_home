@@ -1,3 +1,4 @@
+/* eslint-disable no-useless-escape */
 function replaceChn(url,chn = 'miniprogram_xys') {
   if(/(\?|\&)chn=(.*?)(\&|$)/.test(url)){
       let reg = new RegExp('(\\?|\\&)chn=(?!'+ chn +')(.*?)(\\&|$)');
