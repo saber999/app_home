@@ -1,7 +1,7 @@
 
 <template>
   <section class="banner">
-    <div v-swiper:mySwiper="swiperOption">
+    <div class="swiperOption">
       <div class="swiper-wrapper">
         <div class="swiper-slide" v-for="(item,index) in bannerData" :key="index" >
           <img :src="item.pic" />
@@ -13,6 +13,7 @@
 </template>
  
 <script>
+import swiper from 'swiper'
   export default {
     data () {
       return {
@@ -45,7 +46,7 @@
       }
     },
     mounted() {
-      
+      new swiper('.swiperOption',this.swiperOption)
     },
     asyncData({isDev, route, store, env, params, query, req, res, redirect, error}) {
       

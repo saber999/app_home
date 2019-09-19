@@ -4,7 +4,7 @@ import Axios from 'axios'
 const DEFAULT_HOST = {DEV_HOST:"dev.xinhulu.com", BETA_HOST:"beta.xinhulu.com", IDC_HOST:"www.xiaoyusan.com"}
 const ENV = process.env.NODE_ENV || 'DEV_HOST'
 const argv =process.argv.slice(2)[0]
-const baseURL = DEFAULT_HOST[argv] || 'http://localhost:8082/'
+const baseURL = DEFAULT_HOST[argv] || 'http://localhost:8080/'
 
 console.log(baseURL)
 export default (url,param,timeout=8000) =>{

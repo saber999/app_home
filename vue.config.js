@@ -1,5 +1,5 @@
 module.exports={
   devServer:{
-      proxy: ""
+      proxy: "http://dev.xinhulu.com"
   }
 }
